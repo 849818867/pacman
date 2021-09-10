@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>吃豆人游戏</title>
+  <meta name="keywords" content="吃豆人,吃豆游戏,Pac-Man,HTML5游戏,Javascript游戏引擎">
+  <link rel="shortcut icon" href="./img/favicon.png">
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper{
+    width: 960px;
+    margin:30px auto;
+    color: #999;
+    text-align: center;
+  }
+  canvas{
+    display: block;
+    background-color: #000;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <canvas id="canvas", width="960" height="640">不支持画布</canvas>
+    <div class="info">按［空格］暂停或继续</div>
+  </div>
+  <script src="js/gameEngine.js"></script>
+  <script src="js/mapArr.js"></script>
+  <script src="js/gameIndex.js"></script>
+</body>
+</html>
