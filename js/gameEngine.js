@@ -250,7 +250,7 @@ function GameEngine(id, params) {
         if (_events[eventType][key]) {
           _events[eventType][key](e);
         }
-        // e.preventDefault();
+        e.preventDefault();
       });
     }
     _events[eventType]['s' + this.index] = callBack.bind(this);
